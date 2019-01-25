@@ -1,0 +1,18 @@
+<!-- links is a param -->
+<ul style="margin-top:0;padding-left: 20px;">
+{% for link in include.links %}
+    {% assign item = link | first %}
+    <li>
+        {% if item[1].first %}
+            {{ item[0] }}
+            {% assign subdoc = item[1] %}
+            {% include docs-sitemap.html links=subdoc %}    
+        {% else %}
+            {% assign version = "6.0.x" %}
+            {% assign docspath = "_docs/" | append: version | append: "/" | append: item[1] %}
+            {% assign p = site.documents | where: "path", docspath | first %}        
+            <a href="{{ p.url | relative_url}}">{{ item[0] }}</a>                    
+        {% endif %}
+    </li>            
+{% endfor %}
+</ul>

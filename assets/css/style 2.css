@@ -1,0 +1,131 @@
+@font-face {
+	font-family: "istok-web";
+	src: url("IstokWeb-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "varela-round";
+	src: url("VarelaRound-Regular.ttf") format("truetype");
+}
+
+html {
+	margin: 0px;
+}
+
+body {
+	font-family: "varela-round";
+	background-color: rgb(234, 234, 234);
+	margin: 0px;
+}
+
+.image {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+#logo {
+	background-image: url(logo_paella.png);
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pageHeader {
+	background-color: white;
+	padding: 20px;
+	border-bottom: 1px solid #fa8528;
+	height: 350px;
+}
+
+#headerText {
+	font-family: "istok-web";
+	font-size: 44pt;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.logoGroup {
+	width: 360px;
+	float: left;
+	margin-top: 40px;
+}
+
+a {
+	color: #fa8528;
+}
+
+a:visited {
+	color: #fa8528;
+}
+
+a:hover {
+	color: #fba352;
+}
+
+a:active {
+	color: #ffb055;
+}
+
+.linkButton {
+	font-size: 20px;
+	color: white;
+	background-color: #fa8528;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1.6pt solid #BA631E;
+	box-shadow: inset -3px -5px 10px 0px #D9711D;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.linkButton.small {
+	padding: 10px;
+	font-size: 12px;
+}
+
+.linkButton:hover {
+	color:white;
+	background-color: #FFA863;
+}
+
+.linkButton:active {
+	color:white;
+	box-shadow: inset 3px 5px 20px 0px #D9711D;
+}
+
+.buttonGroup#downloads {
+	width: 233px;
+	padding-top: 5px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#githubLink {
+	width: 90px;
+}
+
+#resourcesLink {
+	width: 90px;
+	float: right;
+}
+
+#downloadPaella3 {
+	display: block;
+	width: 189px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.downloadGroup {
+	width: 250px;
+	float: right;
+	margin-top: 100px
+}
+
+
+

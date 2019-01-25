@@ -1,0 +1,9 @@
+{% assign player_url = '/paella/player-' | append: site.version | append: '/' | relative_url %}
+
+<iframe
+    width="{{ include.width }}"
+    height="{{ include.height }}"
+    frameborder="0"
+    allowfullscreen="true" 
+    src="{{player_url}}?id={{ include.id }}">
+</iframe>

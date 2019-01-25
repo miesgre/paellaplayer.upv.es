@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="row" style="margin-bottom: -100px;">
+    <div class="col-md-9">
+        {{ content}}
+    </div>
+    <div class="col-md-3">
+        {% assign hh = page.url | split: "/" %}
+        {% assign version = hh[2] %}
+        {% assign toc = version | replace: ".","" %}
+
+        {% for section in site.data.docs[toc].content %}
+            {% assign item = section | first %}
+            {% if item[1].first %}
+                <h4>{{item[0]}}</h4>
+                {% assign subdoc = item[1] %}
+                {% include docs-sitemap.html links=subdoc %}            
+            {% else %}
+                {% assign version = "6.0.x" %}
+                {% assign docspath = "_docs/" | append: version | append: "/" | append: item[1] %}
+                {% assign p = site.documents | where: "path", docspath | first %}        
+                <h4><a href="{{ p.url | relative_url}}">{{ item[0] }}</a></h4>
+            {% endif %}          
+        {% endfor %}
+    </div>
+</div>

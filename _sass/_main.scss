@@ -1,0 +1,346 @@
+@font-face {
+	font-family: "istok-web";
+	src: url("../fonts/IstokWeb-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "ubuntu";
+	src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "varela-round";
+	src: url("../fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+
+html {
+	margin: 0px;
+}
+
+body {
+	font-family: "ubuntu";
+	background-color: rgb(234, 234, 234);
+	margin: 0px;
+}
+
+pre {
+	padding: 20px;
+	border-bottom: 2px solid #cc0000;
+	border-top: 2px solid #cc0000;
+}
+
+.highlight {
+	pre {
+		padding: 20px;
+		background-color: #2b2b2b;
+		border-bottom: none;
+		border-top: none;
+		color: whitesmoke;
+	}
+}
+
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	box-shadow: 1px 1px 4px 0px black
+}
+
+h1 {
+	color: #909090;
+}
+
+h2 {
+	color: #707070;
+}
+
+ul li p {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+ul {
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+}
+
+.alignCenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 90%;
+}
+
+.image {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+#logo {
+	background-image: url(logo_paella.png);
+	width: 140px;
+	height: 140px;
+	float: left;
+}
+
+.pageHeader {
+	background-color: white;
+	padding: 20px;
+	border-bottom: 1px solid #cc0000;
+	height: 168px;
+}
+
+.content {
+	width: 90%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.content.page {
+	margin-top: 0px;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+#headerText {
+	font-family: "istok-web";
+	font-size: 60pt;
+	display: block;
+	width: 100%;
+	line-height:90px;
+	margin-left: 157px;
+}
+
+#headerSubtitle {
+	display: block;
+	width: 100%;
+	margin-left: 160px;
+	font-size: 28px;
+	color: gray;
+}
+
+.logoGroup {
+	width: 660px;
+	float: left;
+	margin-top: 20px;
+}
+
+a {
+	color: #cc0000;
+}
+
+a:visited {
+	color: #cc0000;
+}
+
+a:hover {
+	color: #cc3333;
+}
+
+a:active {
+	color: #ca0000;
+}
+
+.linkButton {
+	font-size: 17px;
+    color: white;
+    background-color: #cc0000;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: inset -3px -5px 10px 0px #cc0000;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkButton.small {
+	padding: 10px;
+	font-size: 12px;
+}
+
+.linkButton:hover {
+	color:white;
+	background-color: #cc3333;
+}
+
+.linkButton:active {
+	color:white;
+	box-shadow: inset 3px 5px 20px 0px #770000;
+	background-color: #bb0000;
+}
+
+.buttonGroup#downloads {
+	width: 233px;
+	padding-top: 5px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#githubLink {
+	display: block;
+}
+
+#resourcesLink {
+	display: block;
+}
+
+#downloadPaella3 {
+	display: block;
+	width: 153px;
+	margin-top: 33px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+.downloadGroup {
+	width: 250px;
+	float: right;
+	text-align: center;
+}
+
+.shieldsIoImage {
+	margin-top: 5px;
+}
+
+.footerText {
+	display: inline-block;
+	height: 50px;
+	vertical-align: top;
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+.sponsorLogo {
+	width: 100px;
+	display: inline-block;
+}
+
+.content.footer {
+	border-top: 4px solid #cc0000;
+	padding-top: 10px;
+}
+
+.paella-main-menu {
+	margin-left: 24px !important;
+	margin-right: 24px !important;
+}
+
+.menu {
+	margin-top: 123px;
+}
+
+.menuList {
+
+}
+
+.menuItem {
+	list-style-type:none;
+	display: inline;
+	margin-right: 30px
+}
+
+.menuItemLink {
+	cursor: pointer;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+}
+
+.menuItemLink.current {
+	color: white;
+    background-color: #cc0000;
+}
+
+.paella-header {
+	height: 160px;
+	border-bottom: 1px solid #cc0000;
+}
+
+.paella-header-logo {
+	height: 100%;
+}
+
+.paella-menuitem a {
+	color: #cc0000 !important;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+}
+
+.paella-menuitem.active a {
+	color: white !important;
+	background-color: #cc0000 !important;
+}
+
+.content.page {
+	margin-top: -20px;
+}
+
+@media (max-width: 994px) {
+	.paella-header {
+		height: 100px;
+	}
+
+	.hidden-md-down {
+		display: none !important;
+	}
+
+	.hidden-md-up {
+				
+	}
+
+	.menu {
+		margin-top: 64px;
+	}
+}
+
+iframe {
+	width: 100%;
+}
+
+@media (min-width: 994px) {
+	.hidden-md-up {
+		display: none !important;
+	}
+
+	.paella-collapse-button {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav.navbar-nav.navbar-right {
+		background-color: white;
+		margin-top: -64px;
+		width: 200px;
+		float: right;
+		border-left: 1px solid #cc0000;
+		border-right: 1px solid #cc0000;
+		border-bottom: 1px solid #cc0000;
+	}
+
+	.paella-header {
+		height: 80px;
+	}
+
+	.menu {
+	}
+
+	iframe {
+		height: 350px;
+	}
+
+	.paella-collapse-button {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		/* z-index: 100; */
+		background-color: white;
+		border: 1px solid gray;
+	}
+}

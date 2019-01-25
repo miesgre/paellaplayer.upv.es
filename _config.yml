@@ -1,0 +1,35 @@
+title: Paella Player
+description: the multistream player for lectures
+version: 6.0.2
+show_downloads: true
+google_analytics: UA-26470475-6
+markdown: kramdown
+highlighter: rouge
+baseurl: "/paellaplayer.upv.es"
+#baseurl: "/_site"
+#url: "http://127.0.0.1:5500"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - rouge
+collections:
+  docs:
+    permalink: "/:collection/:path:output_ext"
+    output: true   
+defaults:
+  - scope:
+      path: "_docs/*"
+      type: docs
+    values:
+      layout: docs
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span: 
+      default_lang: javascript
+relative_links:
+  enabled:     true
+  collections: true

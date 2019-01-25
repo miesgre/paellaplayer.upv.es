@@ -1,0 +1,39 @@
+<div class="navbar-wrapper">
+    <nav class="paella-header navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand paella-header" href="{{ '/' | relative_url }}">
+                    <img class="img-responsive paella-header-logo" src="{{ 'assets/images/logo_paella.png' | relative_url }}" alt="paella player logo">
+                </a>
+            </div>
+            <div class="downloadGroup hidden-md-down">
+                <a href="{{ '/download/' | relative_url }}" class="linkButton" id="downloadPaella3">Download<br></a>
+                <div style="margin-top:3px;">
+                    {% include version.html %}
+                </div>
+            </div>
+            <button class="navbar-toggle paella-collapse-button" data-toggle="collapse" data-target="#mainMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="paella-main-menu navbar-collapse collapse" id="mainMenu">
+                <div class="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% for p in site.data.primary_nav %}
+                        <li class="paella-menuitem 
+                            {% if p.link == '/' %}
+                            {% if page.url == '/' %}active{% endif %}
+                            {% else %}
+                            {% if page.url contains p.link %}active{% endif %}
+                            {% endif %}">
+                            <a class="menuItemLink" href="{{ p.link | | relative_url }}">{{ p.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
