@@ -5,6 +5,8 @@ layout: default
 {% assign version = hh[2] %}
 {% assign toc = version | replace: ".","" %}
 {% assign docs_folder = "_docs/" | append: version | append: "/" %}
+{% assign doc_page = page.path | remove: docs_folder %}
+{% assign edit_url = "https://github.com/polimediaupv/paella/edit/" | append: version | append: "/doc/" | append: doc_page %}
 
 <div class="row">
     <div class="col-md-9">
@@ -33,5 +35,6 @@ layout: default
     <div>[page.path] - {{ page.path }}</div>
     <div>[docs_folder] - {{ docs_folder }}</div>
     
-    <div>[edit] - {{ page.path | remove: docs_folder }}</div>
+    <div>[edit] - {{ edit_url }}</div>
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </div>
