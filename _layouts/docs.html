@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
+{% assign hh = page.url | split: "/" %}
+{% assign version = hh[2] %}
+{% assign toc = version | replace: ".","" %}
 
-<div class="row" style="margin-bottom: -100px;">
+<div class="row">
     <div class="col-md-9">
         {{ content}}
     </div>
     <div class="col-md-3">
-        {% assign hh = page.url | split: "/" %}
-        {% assign version = hh[2] %}
-        {% assign toc = version | replace: ".","" %}
-
         {% for section in site.data.docs[toc].content %}
             {% assign item = section | first %}
             {% if item[1].first %}
@@ -26,6 +25,9 @@ layout: default
         {% endfor %}
     </div>
 </div>
-<div>
-    [Edit]
+<div class="row" style="margin-bottom: -100px;">
+    <div>[toc] - {{toc}}</div>
+    <div>[version] - {{version}}</div>
+    <div>[page.url] - {{page.url}}</div>
+    <div>[page] - {{page}}</div>    
 </div>
