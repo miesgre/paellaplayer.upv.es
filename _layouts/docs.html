@@ -28,5 +28,5 @@ layout: default
     <div>[toc] - {{toc}}</div>
     <div>[version] - {{version}}</div>
     <div>[page.url] - {{page.url}}</div>
-    <div>[page.path] - {{page.path}}</div>
+    <div>[page.path] - {{ page.path | remove: ("_docs/" | append: version) }}</div>
 </div>
