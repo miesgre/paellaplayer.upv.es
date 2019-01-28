@@ -1,6 +1,7 @@
+version: 6.0.2
 title: Paella Player
 description: the multistream player for lectures
-version: 6.0.2
+paella_repository: https://github.com/polimediaupv/paella
 show_downloads: true
 google_analytics: UA-26470475-6
 markdown: kramdown
